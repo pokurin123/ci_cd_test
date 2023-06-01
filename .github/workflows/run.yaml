@@ -1,12 +1,9 @@
 name: learn-github-actions
 on: [push]
+env:
+  env1: tomato
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is pen"
-      - uses: actions/checkout@v2
-      - run: |
-          ls
-          cd .github/workflows/
-          ls
+      - run: echo "this is ${{ env.env1 }}"
