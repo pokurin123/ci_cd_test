@@ -4,4 +4,9 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-       - run: echo "Hello, world!"
+      - run: echo "Hello, world!"
+      - uses: actions/checkout@v2
+      - run: |
+        ls -al
+        cd .github/workflows/
+        ls -al
