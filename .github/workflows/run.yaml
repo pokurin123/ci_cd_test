@@ -1,12 +1,12 @@
 name: learn-github-actions
 on: [push]
-env:
-  env1: tomato
+# env:
+#   env1: tomato
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is ${{ env.env1 }}"
+      # - run: echo "this is ${{ env.env1 }}"
       env:
         env2: apple
       - run: echo "this is ${{ env.env2 }}"
