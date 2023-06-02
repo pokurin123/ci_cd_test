@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "this is ${{ env.env1 }}"
-    env:
-      env1: apple
+      env:
+        env1: apple
       - run: echo "this is ${{ env.env1 }}"
